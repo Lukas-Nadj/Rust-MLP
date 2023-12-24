@@ -20,7 +20,8 @@ This is mostly for fun and personal use, but if you want to use it you can creat
 
 
 ## Todo
-- Backpropagation / gradient descent
+- Backpropagation / stochastic gradient descent
+    - switch to batching afterwards.
 - import training data into memory. (using Mnist handwritten digits data set)
 - mix n' match activation functions.
 - vizualisation (might just stream data with a webserver to a local website and do that part in javascript)
