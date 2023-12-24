@@ -5,6 +5,7 @@ some features i've thought about are options for precision and making the activa
 
     let ReLu = ||...;
     let Sigmoid = ||...;
+    
     let model_structure = vec![784, 16, 16, 10]
     let functions = vec![ReLu, ReLu, Sigmoid]
 
@@ -14,7 +15,7 @@ anyways i'm not creating anything thats gonna be too efficient or score that wel
 ## How to use it
 This is mostly for fun and personal use, but if you want to use it you can create a model like:
 
-    let mut model = MultilayerPerceptron::init( vec![10, 16, 16, 10]  ); // [input, hidden, hidden, output]
+    let mut model = MultilayerPerceptron::init( vec![10, 16, 16, 10]  );
     model.feed();
 
 
