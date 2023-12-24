@@ -3,6 +3,8 @@
 I remember failing at creating an ai from scratch for my school project, and i wanted to practice using rust, so 2 birds with one stone :)
 some features i've thought about are options for precision and making the activation function a closure that you can import on init. so can define a simple network with just two vector arrays like
 
+    let ReLu = ||...;
+    let Sigmoid = ||...;
     let model_structure = vec![784, 16, 16, 10]
     let functions = vec![ReLu, ReLu, Sigmoid]
 
