@@ -30,4 +30,4 @@ This is mostly for fun and personal use, but if you want to use it you can creat
     - second layer weight vis.
     - live drawing fed to model.
 - Evaluation
-- Use ndarray or create better implementation instead of Vec<Vec<f32>> and whatnot
+- Use ndarray or create better matrix implementation instead of Vec<Vec<f32>> and whatnot
