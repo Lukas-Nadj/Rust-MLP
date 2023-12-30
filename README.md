@@ -9,7 +9,7 @@ some features i've thought about are options for precision and making the activa
     let model_structure = vec![784, 16, 16, 10]
     let functions = vec![ReLu, ReLu, Sigmoid]
 
-anyways i'm not creating anything thats gonna be too efficient or score that well. for now i'm just using sigmoids and creating a feed-forward neural network / Multi Layer Perceptron. 
+or maybe i'll let it be an enum or traits idk. anyways i'm not creating anything thats gonna be too efficient or score that well. for now i'm just using sigmoids and creating a feed-forward neural network / Multi Layer Perceptron. 
 
 
 ## How to use it
@@ -22,9 +22,11 @@ This is mostly for fun and personal use, but if you want to use it you can creat
 ## Todo
 - Backpropagation / stochastic gradient descent
     - switch to batching afterwards.
-- import training data into memory. (using Mnist handwritten digits data set)
+- import training data into memory. (using Mnist handwritten digits data set csv file)
 - mix n' match activation functions.
 - vizualisation (might just stream data with a webserver to a local website and do that part in javascript)
     - visualise digits while training
+    - output vis
+    - second layer weight vis.
     - live drawing fed to model.
 - Evaluation
