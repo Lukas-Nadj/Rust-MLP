@@ -24,7 +24,7 @@ This is mostly for fun and personal use, but if you want to use it you can creat
     - switch to batching afterwards.
 - import training data into memory. (using Mnist handwritten digits data set csv file)
 - mix n' match activation functions.
-- vizualisation (might just stream data with a webserver to a local website and do that part in javascript)
+- vizualisation (might just stream data with a webserver to a local website and do that part in javascript)... actually... tauri.
     - visualise digits while training
     - output vis
     - second layer weight vis.
