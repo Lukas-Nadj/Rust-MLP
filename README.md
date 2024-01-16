@@ -32,5 +32,5 @@ This is mostly for fun and personal use, but if you want to use it you can creat
     - live drawing fed to model.
 - MVP
     - Evaluation of arbitrary models.
-- Use ndarray or create better matrix implementation instead of `Vec<Vec<f32>>` and whatnot, Box<> preallocates?
+- Use ndarray or create better matrix implementation instead of `Vec<Vec<f32>>` and whatnot.
 
