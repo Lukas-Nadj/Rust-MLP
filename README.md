@@ -15,8 +15,8 @@ or maybe i'll let it be an enum or traits idk. anyways i'm not creating anything
 ## How to use it
 This is mostly for fun and personal use, but if you want to use it you can create a model like:
 
-    let mut model = MultilayerPerceptron::init( vec![10, 16, 16, 10]  );
-    model.feed();
+    let mut model = MultilayerPerceptron::init( vec![10, 16, 16, 10]  ); //vec![inputs, neuroncount, neuroncount, outputs];
+    model.feed(); //prints out model outputs(last array in activations) by implementing debug, weird and unsafe!
 
 
 ## Todo
@@ -24,11 +24,13 @@ This is mostly for fun and personal use, but if you want to use it you can creat
     - switch to batching afterwards.
 - import training data into memory. (using Mnist handwritten digits data set csv file)
 - mix n' match activation functions.
+- use Serde to serialize and deserialize W+B's
 - vizualisation (might just stream data with a webserver to a local website and do that part in javascript)... actually... tauri.
     - visualise digits while training
     - output vis
     - second layer weight vis.
     - live drawing fed to model.
-- Evaluation
-- Use ndarray or create better matrix implementation instead of `Vec<Vec<f32>>` and whatnot
-- use Serde to serialize and deserialize W+B's
+- MVP
+    - Evaluation of arbitrary models.
+- Use ndarray or create better matrix implementation instead of `Vec<Vec<f32>>` and whatnot, Box<> preallocates?
+
