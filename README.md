@@ -23,14 +23,17 @@ This is mostly for fun and personal use, but if you want to use it you can creat
 - Backpropagation / stochastic gradient descent
     - switch to batching afterwards.
 - import training data into memory. (using Mnist handwritten digits data set csv file)
-- mix n' match activation functions.
 - use Serde to serialize and deserialize W+B's
-- vizualisation (might just stream data with a webserver to a local website and do that part in javascript)... actually... tauri.
-    - visualise digits while training
-    - output vis
-    - second layer weight vis.
-    - live drawing fed to model.
 - MVP
     - Evaluation of arbitrary models.
 - Use ndarray or create better matrix implementation instead of `Vec<Vec<f32>>` and whatnot.
+
+## Wishes
+- WGPU 🤤
+- vizualisation (might just stream data with a webserver to a local website and do that part in javascript)... actually... tauri.
+    - Draw training examples + Model ouput.
+    - Weight vis.
+    - live drawing fed to model.
+    - Graph Cost over epoch.
+- option to compile trained model into feed-only binaries through stdin/stdout.
 
