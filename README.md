@@ -14,9 +14,14 @@ or maybe i'll let it be an enum or traits idk. anyways i'm not creating anything
 
 ## How to use it
 This is mostly for fun and personal use, but if you want to use it you can create a model like:
-
-    let mut model = MultilayerPerceptron::init( vec![10, 16, 16, 10]  ); //vec![inputs, neuroncount, neuroncount, outputs];
-    model.feed(); //prints out model outputs(last array in activations) by implementing debug, weird and unsafe!
+    
+    //import csv //should use serde in future.
+    let data:Data = Data::init_csv(",", "src/mnist_train.csv", "src/mnist_test.csv",784);
+    
+    //vec![inputs, neuroncount, neuroncount, outputs];
+    let mut model = MultilayerPerceptron::init( vec![10, 16, 16, 10]  ); 
+    //prints out model outputs(last array in activations) by implementing debug, weird and unsafe!
+    model.feed(); 
 
 
 ## Todo
