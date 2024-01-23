@@ -1,1 +1,4 @@
 /target
+/model
+/src/mnist_test.csv
+/src/mnist_train.csv
