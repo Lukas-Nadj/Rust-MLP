@@ -10,12 +10,20 @@ use std::path::Path;
 
 fn main(){
     println!("Initializing");
-    let data:Data = Data::init_csv(",", "src/mnist_train.csv", "src/mnist_test.csv",784);
-    //let mut model = MultilayerPerceptron::init( vec![784, 10, 10, 10, 10], data);
-    let mut model = MultilayerPerceptron::load_model("./model", vec![784, 10, 10, 10, 10], data);
-    //save_model(&model, "./model");
+    let data:Data = Data::init_csv(",", "src/mnist_train.csv", "src/mnist_test.csv", 784); //this needs to be a serde buffered reader, or deprecated entirely.
+
+    //initalize new model.
+    let mut model = MultilayerPerceptron::init( vec![784, 10, 10, 10, 10], data);
+
+    //load model from file.
+    //let mut model = MultilayerPerceptron::load_model("./model", vec![784, 10, 10, 10, 10], data);
+
+    //save model to disk.
+    save_model(&model, "./model");
+
+    //produce model-output. outputs shouldn't change between these two.
     model.feed(1);
-    //model.feed(1);
+    model.feed(1);
 }
 
 fn save_model(model: &MultilayerPerceptron, path: &str) {
