@@ -1,3 +1,9 @@
+# This was abandoned sadly! 
+Maybe I'll take it up again at some point in the future, I AM taking ML this semester. But it's been abandoned for a while :P
+
+<img height="500" alt="Rust-MLP-certificate" src="https://github.com/user-attachments/assets/fcebc726-d5af-4116-8f37-c234ccf50b6b" />
+
+
 # AI::from("Scratch")
 
 I remember failing at creating an ai from scratch for my school project, and i wanted to practice using rust, so 2 birds with one stone :)
